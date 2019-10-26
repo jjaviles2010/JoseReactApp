@@ -28,10 +28,22 @@ class Search extends Component {
 
     }
 
+    renderItem(item) {
+        return (
+                <li key={`item_${item.id}`}>
+                    { item.title }
+                </li>
+        );
+    }
+
     render() {
         return (
             <div>
                 <input type="text" onChange={ this.onSearch } />
+
+                <ul>
+                    { this.state.results.map(this.renderItem) }
+                </ul>
             </div>
         );
     }
