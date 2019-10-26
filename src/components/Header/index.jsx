@@ -1,9 +1,12 @@
 import React from 'react';
+import './style.css';
+import logo from '../../assets//logo.png';
 
-const Header = () => {
+const Header = (props) => {
     return (
-        <header>
-            <h1>HEADER DA NOSSA SPA!</h1>
+        <header className="header">
+            <h1>{ props.title }</h1>
+            <img src={ logo } />
         </header>
     )
 };

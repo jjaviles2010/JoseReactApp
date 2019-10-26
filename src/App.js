@@ -8,7 +8,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Header title = { "Mercado Livre" }/>
       <Router>
         <Routes />
       </Router>
